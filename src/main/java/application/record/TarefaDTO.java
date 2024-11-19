@@ -22,6 +22,6 @@ public record TarefaDTO(
                 tarefa.getDataCriacao(),
                 tarefa.getDataInicio(),
                 tarefa.getDataConclusao(),
-                tarefa.getColaboradores().stream().map(ColaboradorDTO::new).collect(Collectors.toSet()));
+                tarefa.getColaborador().stream().map(ColaboradorDTO::new).collect(Collectors.toSet()));
     }
 }

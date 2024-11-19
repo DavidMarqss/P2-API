@@ -37,7 +37,7 @@ public class Tarefa {
 
     @ManyToMany
     @JoinTable(name = "tarefa_colaborador", joinColumns = @JoinColumn(name = "tarefa_id"), inverseJoinColumns = @JoinColumn(name = "colaborador_id"))
-    private Set<Colaborador> colaboradores = new HashSet<>();
+    private Set<Colaborador> colaborador = new HashSet<>();
 
     public Tarefa(TarefaDTO tarefa) {
         this.id = tarefa.id();
